@@ -22,7 +22,7 @@
 *\* - required parameter*
 
 ### Example
-`https://github-profile-note.vercel.app/?text=hello%20world!\n:)&color=pink&rotation=8`
+[`https://github-profile-note.vercel.app/?text=hello%20world!\n:)&color=pink&rotation=8`](https://github-profile-note.vercel.app/?text=hello%20world!\n:)&color=pink&rotation=8)
 
 <img width="350px" src="https://github-profile-note.vercel.app/?text=hello%20world!\n:)&color=pink&rotation=8" />
 
