@@ -14,6 +14,8 @@ app.get('/', async (request, response) => {
     var note = new Note({
         color: request.query.color,
         rotation: request.query.rotation,
+        fill: request.query.fill,
+        gradient: request.query.gradient,
     });
 
     // stores the rendered svg in a variable

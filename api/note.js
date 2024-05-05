@@ -2,8 +2,8 @@ const Fonts = require('./fonts.json');
 const Colors = require('./colors.json');
 
 class Note {
-    constructor({ color = 'yellow', rotation = 10 }) {
-        this.color = Colors[color] ? color : 'yellow';
+    constructor({ color = 'yellow', rotation = 10, fill }) {
+        this.fill = (Colors[color] || 'yellow') || fill;
         this.rotation = rotation;
     }
 
@@ -51,7 +51,7 @@ class Note {
                 </style>
 
                 /* the rendered svg */
-                <rect x="31" y="31" width="140.571429" height="140.571429" fill="${Colors[this.color]}" transform="rotate(${this.rotation})" transform-origin="center center" />
+                <rect x="31" y="31" width="140.571429" height="140.571429" fill="${this.fill}" transform="rotate(${this.rotation})" transform-origin="center center" />
                 <rect x="31" y="31" width="140.571429" height="14.0714286" fill="black" fill-opacity="0.5" style="mix-blend-mode:overlay" transform="rotate(${this.rotation})" transform-origin="center center" />
 
                 <text y="68" fill="black" transform="rotate(${this.rotation})" transform-origin="center center">
