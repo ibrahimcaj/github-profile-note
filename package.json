@@ -1,0 +1,7 @@
+{
+    "type": "commonjs",
+    "dependencies": {
+        "express.js": "^1.0.0",
+        "highlight.js": "^11.9.0"
+    }
+}
